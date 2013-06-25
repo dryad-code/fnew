@@ -1,0 +1,11 @@
+#!/usr/bin/python
+#A program to create a file of a specified size
+#Better than using dd (more simple) but might be slower
+#Created on Tuesday, April 2, 2013
+ 
+import sys
+ 
+f = open(sys.argv[1], "w")
+f.seek(int(sys.argv[2])) 
+f.write("\0")
+f.close()
