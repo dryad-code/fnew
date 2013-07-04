@@ -6,6 +6,6 @@
 import sys
  
 f = open(sys.argv[1], "w")
-f.seek(int(sys.argv[2])) 
+f.seek(int(sys.argv[2]) - 1) 
 f.write("\0")
 f.close()
